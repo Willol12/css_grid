@@ -1,0 +1,70 @@
+Existem 6 propriedades para o alinhamento:
+
+1`justify-content`
+2`align-content`
+3`justify-items`
+4`align-items`
+5`justify-self`
+6`align-self`
+
+Sepando em dois grupos temos
+1.`justify` e `align`
+2.`content`, `items`, `self`
+
+##Justify e align
+
+  Sabendo que o grid é bidimensional, nós temos o eixo x e o y
+
+    O eixo x é o posicionamento horizontal, da esquerda para direita.
+
+    O eixo y é o posicionamento vertical, de cima para baixo.
+
+##Content, Items e Self
+
+Juntando o `justify`, ou `align`, com esses elementos: `content`, `items` e `self`:
+Nós observamos nossas propriedades
+
+##Content
+
+`justify-content` e `align-content` nos permite alinha o próprio grid, relativo ao espaço fora do grid.
+
+O uso dessas propriedades são raras, pois só é aplicado caso o grid seja menor que a area definida.
+(Por exemplo, quando usamos em px o tamanho do grid, podemos terminar com um grid pequeno,
+para o tamanho da area do grid)
+
+Podemos usar 7 valores para o `justify-content:` trabalhando na horizontal
+1. justify-content: start = colocar container no caso no começo da pagina
+2. justify-content: end = colocar no fim da pagina
+3. justify-content: center = colocar no centro da pagina
+4. justify-content: stretch = esticamento horizontal
+5. justify-content: space-between = definir um espaço igual entre cada coluna dentro do container
+6. justify-content: space-around = coloca um espaço ao redor do começo, final
+7. justify-content: space-evenly = e esse coloca um espaço continuo 
+fica o mesmo espaço do começo da pagina para a primeira coluna, segunda terceira etc
+
+Esses 7 valores são para `align-content` vertical
+1. align-content: start = Coloca no começo da pagina
+2. align-content: end = coloca no final da pagina
+3. align-content: center = coloca no centro da pagina
+4. align-content: strech = esticamento veritcal
+5. align-content: space-between = definir um espaço igual entre cada linha dentro do container
+6. align-content: space-around = coloca um espaço ao redor do começo, final
+7. align-content: space-evenly = e esse coloca um espaço continuo 
+fica o mesmo espaço do começo da pagina para a primeira linha, segunda terceira etc
+
+##Items
+
+`justify-items` e` align-items` vai permitir alinhas os items do nosso grid, em qualquer espaço
+disponível, na célula que ele habitar.
+
+Podemos usar esses 4 valores:
+1. start
+2. end
+3. center
+4. stretch
+
+##Self
+
+`justify-self` e `align-self` vai nos permitir alinha o item em si.
+
+Faz a mesma coisa que o `justify-items` e `align-items`, porém, aplicando diretamente no item de um grid

@@ -1,0 +1,46 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+
+}
+.container {
+  background: black;
+  width: 100vw; /*vh e vw é toda altura e largura visivel*/
+  height: 100vh;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  
+ 
+}
+.container > div {
+  background: #7159c1;
+  width: 50%;
+  height: 50%;
+  
+}
+
+.awd {
+
+  justify-self: center;
+  align-self: center;
+}
+
+.d {
+  justify-self: center;
+  align-self: center;
+}
+
+.c {
+  justify-self: center;
+  align-self: center;
+}
+
+.b {
+  justify-self: center;
+  align-self: center;
+}

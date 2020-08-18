@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background: #7158c1;
+}
+
+.container {
+  display: grid; /*Criação do grid*/
+  grid-template-columns: 3fr 1fr; /*Dividindo a tela em frações*/
+  grid-template-rows: 20vh 70vh 10vh;
+  /*Nesse comando abaixo não se utiliza ponto e virgula no final 
+  E também creio que não precisa repetir o comando*/
+  grid-template-areas: "header header"
+                      "main aside"
+                    "footer footer"
+  /*grid-row-gap: 20px; Da um espaço de linha
+  grid-column-gap: 15px; Da um espaço de coluna
+  E da aplicar esses dois comando de gap de linha e coluna utilizando
+  grid-gap: 20px 50px onde o primeiro seria a linha e o segundo coluna*/
+}
+
+header {
+  background: blue;
+  grid-area: header;
+  /*grid-column: 1/3;
+  grid-row: 3/4;
+  Imaginando 3 linhas de colunas ou linhas na pagina do site coloquei para que o header comaçasse
+  na linha 1 e fosse até a linha 3 expulsando oque estava nela para outro lugar*/
+}
+
+main {
+  background: red;
+  grid-area: main;
+}
+aside {
+  background: green;
+  grid-area: aside;
+}
+footer {
+  background: fuchsia;
+  grid-area: footer;
+}
